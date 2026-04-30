@@ -1,0 +1,10 @@
+﻿  Source.cpp
+Source.cpp(4): warning C4005: '_CRT_SECURE_NO_WARNINGS': macro redefinition
+  Source.cpp(4): note: command-line arguments:  see previous definition of '_CRT_SECURE_NO_WARNINGS'
+  Generating code
+  6 of 292 functions ( 2.1%) were compiled, the rest were copied from previous compilation.
+    4 functions were new in current compilation
+    24 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Imagedatewrite.vcxproj -> D:\visualStudio15\ImageWrite\Imagedatewrite\x64\Release\Imagedatewrite.exe
+  Imagedatewrite.vcxproj -> D:\visualStudio15\ImageWrite\Imagedatewrite\x64\Release\Imagedatewrite.pdb (Full PDB)
