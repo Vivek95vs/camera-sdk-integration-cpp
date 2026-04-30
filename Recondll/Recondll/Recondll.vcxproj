@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CD4FF184-8813-4DDB-AB15-269DAB940491}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Recondll</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;RECONDLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;RECONDLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;RECONDLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;RECONDLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\build 2015 cuda 10.2\RTK_2.3_2015\RTK_R\include\RTK\lp_solve;D:\build 2015 cuda 10.2\RTK_2.3_2015\RTK_R\include\RTK\ITKCudaCommon;D:\build 2015 cuda 10.2\RTK_2.3_2015\RTK_R\include\RTK\gengetopt;D:\TKs\v10.2\include;D:\build 2015 cuda 10.2\RTK_2.3_2015\RTK_R\include\RTK;D:\build 2015 cuda 10.2\ITK_5.2_2015\ITK_R\include\ITK;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\TKs\v10.2\lib\x64;D:\build 2015 cuda 10.2\RTK_2.3_2015\RTK_R\lib;D:\build 2015 cuda 10.2\ITK_5.2_2015\ITK_R\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ITKNrrdIO-5.2.lib;itkopenjpeg-5.2.lib;ITKOptimizers-5.2.lib;ITKOptimizersv4-5.2.lib;ITKPath-5.2.lib;ITKPDEDeformableRegistration-5.2.lib;itkpng-5.2.lib;ITKPolynomials-5.2.lib;ITKQuadEdgeMesh-5.2.lib;ITKQuadEdgeMeshFiltering-5.2.lib;ITKRegionGrowing-5.2.lib;ITKRegistrationMethodsv4-5.2.lib;ITKSmoothing-5.2.lib;ITKSpatialObjects-5.2.lib;ITKStatistics-5.2.lib;itksys-5.2.lib;ITKTestKernel-5.2.lib;itktestlib-5.2.lib;itktiff-5.2.lib;ITKTransform-5.2.lib;ITKTransformFactory-5.2.lib;itkv3p_netlib-5.2.lib;itkvcl-5.2.lib;ITKVideoCore-5.2.lib;ITKVideoCoreTestDriver.lib;ITKVideoIO-5.2.lib;itkvnl_algo-5.2.lib;itkvnl-5.2.lib;ITKVNLInstantiation-5.2.lib;ITKVTK-5.2.lib;ITKVtkGlue-5.2.lib;ITKWatersheds-5.2.lib;itkzlib-5.2.lib;ITKznz-5.2.lib;ClientTestLibraryA.lib;ClientTestLibraryB.lib;ClientTestLibraryC.lib;FactoryTestLib.lib;FileFreeTestLib.lib;ITKBiasCorrection-5.2.lib;ITKColormap-5.2.lib;ITKCommon1TestDriver.lib;ITKCommon-5.2.lib;ITKConvolution-5.2.lib;ITKDeformableMesh-5.2.lib;ITKDenoising-5.2.lib;ITKDICOMParser-5.2.lib;ITKDiffusionTensorImage-5.2.lib;itkdouble-conversion-5.2.lib;ITKEXPAT-5.2.lib;ITKFastMarching-5.2.lib;ITKFFT-5.2.lib;itkgdcmcharls-5.2.lib;itkgdcmCommon-5.2.lib;itkgdcmDICT-5.2.lib;itkgdcmDSED-5.2.lib;itkgdcmIOD-5.2.lib;itkgdcmjpeg8-5.2.lib;itkgdcmjpeg12-5.2.lib;itkgdcmjpeg16-5.2.lib;itkgdcmMEXD-5.2.lib;itkgdcmMSFF-5.2.lib;itkgdcmopenjp2-5.2.lib;itkgdcmsocketxx-5.2.lib;ITKgiftiio-5.2.lib;ITKGPUAnisotropicSmoothing-5.2.lib;ITKGPUCommon-5.2.lib;ITKGPUFiniteDifference-5.2.lib;ITKGPUImageFilterBase-5.2.lib;ITKGPUPDEDeformableRegistration-5.2.lib;ITKGPUSmoothing-5.2.lib;ITKGPUThresholding-5.2.lib;itkgtest_main-5.2.lib;itkgtest-5.2.lib;itkhdf5_cpp-shared-5.2.lib;itkhdf5-shared-5.2.lib;ITKImageFeature-5.2.lib;ITKImageIntensity-5.2.lib;ITKIOBioRad-5.2.lib;ITKIOBMP-5.2.lib;ITKIOBruker-5.2.lib;ITKIOCSV-5.2.lib;ITKIOGDCM-5.2.lib;ITKIOGE-5.2.lib;ITKIOGIPL-5.2.lib;ITKIOHDF5-5.2.lib;ITKIOImageBase-5.2.lib;ITKIOIPL-5.2.lib;ITKIOJPEG-5.2.lib;ITKIOJPEG2000-5.2.lib;ITKIOLSM-5.2.lib;ITKIOMeshBase-5.2.lib;ITKIOMeshBYU-5.2.lib;ITKIOMeshFreeSurfer-5.2.lib;ITKIOMeshGifti-5.2.lib;ITKIOMeshOBJ-5.2.lib;ITKIOMeshOFF-5.2.lib;ITKIOMeshVTK-5.2.lib;ITKIOMeta-5.2.lib;ITKIOMINC-5.2.lib;ITKIOMRC-5.2.lib;ITKIONIFTI-5.2.lib;ITKIONIFTI-TestSupport.lib;ITKIONRRD-5.2.lib;ITKIOPNG-5.2.lib;ITKIOSiemens-5.2.lib;ITKIOSpatialObjects-5.2.lib;ITKIOStimulate-5.2.lib;ITKIOTIFF-5.2.lib;ITKIOTransformBase-5.2.lib;ITKIOTransformHDF5-5.2.lib;ITKIOTransformInsightLegacy-5.2.lib;ITKIOTransformMatlab-5.2.lib;ITKIOVTK-5.2.lib;ITKIOXML-5.2.lib;itkjpeg-5.2.lib;ITKKLMRegionGrowing-5.2.lib;ITKLabelMap-5.2.lib;itklbfgs-5.2.lib;ITKMarkovRandomFieldsClassifiers-5.2.lib;ITKMathematicalMorphology-5.2.lib;ITKMesh-5.2.lib;ITKMetaIO-5.2.lib;itkminc2-5.2.lib;itkNetlibSlatec-5.2.lib;ITKniftiio-5.2.lib;lpsolve55.lib;rtkDisplacedDetectorCompOffsetTest.lib;rtkFBPParallelTest.lib;rtkfdk.lib;rtkFDKCudaTest.lib;rtkFDKTest.lib;rtkfieldofview.lib;rtkfourdfdk.lib;rtkFOVTest.lib;rtkIterativeFDKCudaTest.lib;rtkMotionCompensatedFDKTest.lib;ITKCudaCommon.lib;itkRTK-5.2.lib;curand.lib;cusolver.lib;cusolverMg.lib;cusparse.lib;nppc.lib;nppial.lib;nppicc.lib;nppicom.lib;nppidei.lib;nppif.lib;nppig.lib;nppim.lib;nppist.lib;nppisu.lib;nppitc.lib;npps.lib;nvblas.lib;nvgraph.lib;nvjpeg.lib;nvml.lib;nvrtc.lib;OpenCL.lib;cublas.lib;cublasLt.lib;cuda.lib;cudadevrt.lib;cudart.lib;cudart_static.lib;cufft.lib;cufftw.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Recondll.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Recondll.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
