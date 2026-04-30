@@ -1,0 +1,10 @@
+﻿  PheonixCap.cpp
+PheonixCap.cpp(12): warning C4101: 'end': unreferenced local variable
+PheonixCap.cpp(12): warning C4101: 'start': unreferenced local variable
+  Generating code
+  1 of 398 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  PheonixCap.vcxproj -> D:\visualStudio15\PheonixCap\x64\Release\PheonixCap.exe
+  PheonixCap.vcxproj -> D:\visualStudio15\PheonixCap\x64\Release\PheonixCap.pdb (Full PDB)
