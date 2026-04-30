@@ -1,0 +1,12 @@
+﻿Build started 18-May-17 3:52:08 PM.
+     1>Project "D:\Cam_Leaf_position\camera_calibration62 - Copy\camera_calibration2\camcalib\camcalib\camcalib.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\opencv-3.2.0\build32\install\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         Source.cpp
+     1>d:\cam_leaf_position\camera_calibration62 - copy\camera_calibration2\camcalib\camcalib\source.cpp(283): error C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\conio.h(131) : see declaration of 'getch'
+     1>Done Building Project "D:\Cam_Leaf_position\camera_calibration62 - Copy\camera_calibration2\camcalib\camcalib\camcalib.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.08

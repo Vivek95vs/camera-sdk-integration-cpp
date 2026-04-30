@@ -1,0 +1,14 @@
+﻿Build started 12-10-2022 15:04:49.
+     1>Project "D:\visualStudio15\LENS CALIBRATION\lens caliberation code\cameraCalibration_cpp\camcalib\camcalib.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I"D:\open\opencv-3.4.0\build\install\include" /Zi /nologo /W1 /WX- /O2 /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Release\\" /Fd"x64\Release\vc140.pdb" /Gd /TP /errorReport:prompt Source.cpp
+         Source.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\visualStudio15\LENS CALIBRATION\lens caliberation code\cameraCalibration_cpp\x64\Release\camcalib.exe" /NOLOGO /LIBPATH:"D:\open\opencv-3.4.0\build\install\x64\vc14\lib" opencv_world340.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\visualStudio15\LENS CALIBRATION\lens caliberation code\cameraCalibration_cpp\x64\Release\camcalib.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\visualStudio15\LENS CALIBRATION\lens caliberation code\cameraCalibration_cpp\x64\Release\camcalib.lib" /MACHINE:X64 x64\Release\imgList.obj
+         x64\Release\Source.obj
+         camcalib.vcxproj -> D:\visualStudio15\LENS CALIBRATION\lens caliberation code\cameraCalibration_cpp\x64\Release\camcalib.exe
+     1>Done Building Project "D:\visualStudio15\LENS CALIBRATION\lens caliberation code\cameraCalibration_cpp\camcalib\camcalib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.68
