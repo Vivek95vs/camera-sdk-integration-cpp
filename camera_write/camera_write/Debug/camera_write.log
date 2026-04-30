@@ -1,0 +1,48 @@
+﻿Build started 14-06-2022 17:02:07.
+     1>Project "D:\visualStudio15\camera_write\camera_write\camera_write.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yc"stdafx.h" /Fp"Debug\camera_write.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\camera_write.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt camera_write.cpp camselect.cpp
+         camselect.cpp
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(512): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(513): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(514): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(515): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(516): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(517): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(518): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(519): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(520): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(521): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(522): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(523): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(524): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(525): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(526): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(527): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(528): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(529): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(530): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(531): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(532): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(533): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(534): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(535): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(536): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(537): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(538): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(539): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>d:\visualstudio15\camera_write\camera_write\camselect.cpp(540): warning C4305: 'argument': truncation from 'double' to 'float'
+         camera_write.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\visualStudio15\camera_write\Debug\camera_write.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\visualStudio15\camera_write\Debug\camera_write.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\visualStudio15\camera_write\Debug\camera_write.lib" /MACHINE:X86 Debug\camera_write.obj
+         Debug\camselect.obj
+         Debug\stdafx.obj
+     1>LINK : fatal error LNK1104: cannot open file 'D:\visualStudio15\camera_write\Debug\camera_write.exe'
+     1>Done Building Project "D:\visualStudio15\camera_write\camera_write\camera_write.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.23

@@ -1,0 +1,49 @@
+﻿Build started 15-06-2022 10:46:49.
+     1>Project "D:\visualStudio15\camera_write\camera_write\camera_write.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"x64\Release\camera_write.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc140.pdb" /Gd /TP /errorReport:prompt camselect.cpp
+         camselect.cpp
+     1>camselect.cpp(515): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>camselect.cpp(516): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>camselect.cpp(517): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>camselect.cpp(518): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>camselect.cpp(519): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>camselect.cpp(520): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>camselect.cpp(521): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>camselect.cpp(522): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>camselect.cpp(523): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>camselect.cpp(524): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>camselect.cpp(525): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>camselect.cpp(526): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>camselect.cpp(527): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>camselect.cpp(528): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>camselect.cpp(529): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>camselect.cpp(530): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>camselect.cpp(531): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>camselect.cpp(532): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>camselect.cpp(533): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>camselect.cpp(534): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>camselect.cpp(535): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>camselect.cpp(536): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>camselect.cpp(537): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>camselect.cpp(538): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>camselect.cpp(539): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>camselect.cpp(540): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>camselect.cpp(541): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>camselect.cpp(542): warning C4305: 'argument': truncation from 'double' to 'float'
+     1>camselect.cpp(543): warning C4305: 'argument': truncation from 'double' to 'float'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\visualStudio15\camera_write\x64\Release\camera_write.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\visualStudio15\camera_write\x64\Release\camera_write.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\visualStudio15\camera_write\x64\Release\camera_write.lib" /MACHINE:X64 x64\Release\camera_write.obj
+         x64\Release\camselect.obj
+         x64\Release\stdafx.obj
+         Generating code
+         0 of 216 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+           0 functions were new in current compilation
+           0 functions had inline decision re-evaluated but remain unchanged
+         Finished generating code
+         camera_write.vcxproj -> D:\visualStudio15\camera_write\x64\Release\camera_write.exe
+     1>Done Building Project "D:\visualStudio15\camera_write\camera_write\camera_write.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.14
