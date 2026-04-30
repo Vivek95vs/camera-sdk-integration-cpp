@@ -1,0 +1,16 @@
+
+1. capture 25 frames using the camera, 
+	--keep the chessboard image stable on a flat surface, and capture frames of the chessboard from different angles.
+
+2.open(double click) the local.bat file. this will open the command line in the current directory.
+	-- In the command line type-" dir /b> file_names.txt "  and press Enter.
+
+	-- A text file file_names.txt will be generated. This file contain names of all the files in the directory.
+	-- Select the filenames from the list with .png extensions. And copy the selected file names in the "VID5.xml" file an save and close the file.
+
+3. Run the "camcalib.exe" file.
+	After running, the undistorted image will be shown. Close the window.
+
+4.  The file "out_camera_data.xml" contains the distortion coefficients and the camera matrix.
+	-- Just copy the "out_camera_data.xml" file to the working directory(bin folder ) of the project.
+
