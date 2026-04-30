@@ -1,0 +1,16 @@
+﻿Build started 01-06-2022 16:27:09.
+     1>Project "D:\visualStudio15\opecvfun\MySqlTest\MySqlTest\MySqlTest.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Program Files\MySQL\MySQL Server 8.0\include" /I"C:\Program Files\MySQL\Connector C++ 1.1\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yc"stdafx.h" /Fp"Debug\MySqlTest.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Program Files\MySQL\MySQL Server 8.0\include" /I"C:\Program Files\MySQL\Connector C++ 1.1\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\MySqlTest.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt MySqlTest.cpp
+         MySqlTest.cpp
+     1>c:\program files\mysql\connector c++ 1.1\include\cppconn\sqlstring.h(45): warning C4251: 'sql::SQLString::realStr': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'sql::SQLString'
+     1>c:\program files\mysql\connector c++ 1.1\include\cppconn\exception.h(78): warning C4251: 'sql::SQLException::sql_state': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'sql::SQLException'
+     1>c:\program files\mysql\connector c++ 1.1\include\cppconn\exception.h(162): warning C4251: 'sql::SQLUnsupportedOptionException::option': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of struct 'sql::SQLUnsupportedOptionException'
+     1>c:\program files\mysql\connector c++ 1.1\include\mysql_connection.h(37): fatal error C1083: Cannot open include file: 'boost/shared_ptr.hpp': No such file or directory
+     1>Done Building Project "D:\visualStudio15\opecvfun\MySqlTest\MySqlTest\MySqlTest.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.69

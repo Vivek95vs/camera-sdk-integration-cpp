@@ -1,0 +1,16 @@
+﻿Build started 01-06-2022 17:50:12.
+     1>Project "D:\visualStudio15\opecvfun\MySqlTest\MySqlTest\MySqlTest.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files\MySQL\MySQL Server 8.0\include" /I"C:\Program Files\MySQL\Connector C++ 1.1\include" /ZI /nologo /W3 /WX- /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yc"stdafx.h" /Fp"x64\Debug\MySqlTest.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files\MySQL\MySQL Server 8.0\include" /I"C:\Program Files\MySQL\Connector C++ 1.1\include" /ZI /nologo /W3 /WX- /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"x64\Debug\MySqlTest.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt MySqlTest.cpp
+         MySqlTest.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\visualStudio15\opecvfun\MySqlTest\x64\Debug\MySqlTest.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\MySQL\Connector C++ 1.1\lib\opt" /LIBPATH:"C:\Program Files\MySQL\MySQL Server 8.0\lib" mysqlcppconn.lib libmysql.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\visualStudio15\opecvfun\MySqlTest\x64\Debug\MySqlTest.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\visualStudio15\opecvfun\MySqlTest\x64\Debug\MySqlTest.lib" /MACHINE:X64 x64\Debug\MySqlTest.obj
+         x64\Debug\stdafx.obj
+         MySqlTest.vcxproj -> D:\visualStudio15\opecvfun\MySqlTest\x64\Debug\MySqlTest.exe
+     1>Done Building Project "D:\visualStudio15\opecvfun\MySqlTest\MySqlTest\MySqlTest.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.41
