@@ -1,0 +1,18 @@
+﻿Build started 11-03-2022 09:28:40.
+     1>Project "D:\visualStudio15\opecvfun\loadImg\loadImg\loadImg.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I"D:\open\opencv-3.4.0\build\install\include" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Release\\" /Fd"x64\Release\vc140.pdb" /Gd /TP /errorReport:prompt Source.cpp
+         Source.cpp
+     1>Source.cpp(11): warning C4129: 'M': unrecognized character escape sequence
+     1>Source.cpp(11): warning C4129: 'F': unrecognized character escape sequence
+     1>Source.cpp(12): error C3873: '0x201c': this character is not allowed as a first character of an identifier
+     1>Source.cpp(12): error C3872: '0x201d': this character is not allowed in an identifier
+     1>Source.cpp(12): error C2065: '“Output”': undeclared identifier
+     1>Source.cpp(13): error C3873: '0x201c': this character is not allowed as a first character of an identifier
+     1>Source.cpp(13): error C3872: '0x201d': this character is not allowed in an identifier
+     1>Source.cpp(13): error C2065: '“Output”': undeclared identifier
+     1>Done Building Project "D:\visualStudio15\opecvfun\loadImg\loadImg\loadImg.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.25
