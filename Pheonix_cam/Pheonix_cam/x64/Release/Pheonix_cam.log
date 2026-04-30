@@ -1,0 +1,19 @@
+﻿Build started 07-07-2022 10:59:38.
+     1>Project "D:\visualStudio15\Pheonix_cam\Pheonix_cam\Pheonix_cam.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I"D:\open\opencv-3.4.0\build\install\include" /I"C:\Program Files\Lucid Vision Labs\Arena SDK\include" /I"C:\Program Files\Lucid Vision Labs\Arena SDK\GenICam\library\CPP\include" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"x64\Release\Pheonix_cam.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc140.pdb" /Gd /TP /errorReport:prompt Pheonix_cam.cpp
+         Pheonix_cam.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\visualStudio15\Pheonix_cam\x64\Release\Pheonix_cam.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"D:\open\opencv-3.4.0\build\install\x64\vc14\lib" /LIBPATH:"C:\Program Files\Lucid Vision Labs\Arena SDK\lib64\ArenaC" /LIBPATH:"C:\Program Files\Lucid Vision Labs\Arena SDK\lib64\Arena" /LIBPATH:"C:\Program Files\Lucid Vision Labs\Arena SDK\GenICam\library\CPP\lib\Win64_x64" opencv_world340.lib GCBase_MD_VC140_v3_3_LUCID.lib GCBase_MDd_VC140_v3_3_LUCID.lib GenApi_MD_VC140_v3_3_LUCID.lib GenApi_MDd_VC140_v3_3_LUCID.lib Log_MD_VC140_v3_3_LUCID.lib Log_MDd_VC140_v3_3_LUCID.lib MathParser_MD_VC140_v3_3_LUCID.lib MathParser_MDd_VC140_v3_3_LUCID.lib NodeMapData_MD_VC140_v3_3_LUCID.lib NodeMapData_MDd_VC140_v3_3_LUCID.lib ResUsageStat_MD_VC140_v3_3_LUCID.lib ResUsageStat_MDd_VC140_v3_3_LUCID.lib XmlParser_MD_VC140_v3_3_LUCID.lib XmlParser_MDd_VC140_v3_3_LUCID.lib Arena_v140.lib Arenad_v140.lib ArenaUI_v140.lib ArenaUId_v140.lib GenTL_LUCID_v140.lib GenTL_LUCIDd_v140.lib lucidlog_v140.lib lucidlogd_v140.lib Save_v140.lib Saved_v140.lib ArenaC_v140.lib ArenaCd_v140.lib SaveC_v140.lib SaveCd_v140.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\visualStudio15\Pheonix_cam\x64\Release\Pheonix_cam.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\visualStudio15\Pheonix_cam\x64\Release\Pheonix_cam.lib" /MACHINE:X64 x64\Release\Pheonix_cam.obj
+         x64\Release\stdafx.obj
+         Generating code
+         1 of 238 functions ( 0.4%) were compiled, the rest were copied from previous compilation.
+           0 functions were new in current compilation
+           0 functions had inline decision re-evaluated but remain unchanged
+         Finished generating code
+         Pheonix_cam.vcxproj -> D:\visualStudio15\Pheonix_cam\x64\Release\Pheonix_cam.exe
+     1>Done Building Project "D:\visualStudio15\Pheonix_cam\Pheonix_cam\Pheonix_cam.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.14
