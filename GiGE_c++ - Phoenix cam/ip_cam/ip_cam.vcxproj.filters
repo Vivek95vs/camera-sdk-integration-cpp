@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Required Files">
+      <UniqueIdentifier>{592b59b6-6c82-45ee-ac54-394533201f81}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="mlc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="grabber_g.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mlc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="grabber_g.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\BankA_current.xml">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\BankA_max.xml">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\BankA_min.xml">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\BankA_mm_per_pixels.xml">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\BankA_pixels_per_mm.xml">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\BankB_current.xml">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\BankB_max.xml">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\BankB_min.xml">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\BankB_mm_per_pixels.xml">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\BankB_pixels_per_mm.xml">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\cam_mlc_props.xml">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\cam_outfile.txt">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\camera_features.xml">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\camera_features_default.xml">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\camera_roi.xml">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\con_file1.ccf">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\corners.xml">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\distance_moved_mm.xml">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\frame_details.xml">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\Frame_Start_Timestamp.txt">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\gigE_server_name.xml">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\in_VID5.xml">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\lambda.xml">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\lens_calib_input.xml">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\Microsoft.ReportViewer.WinForms.xml">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\mlc_outfile.txt">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\opencv_world320.dll">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\opencv_world320d.dll">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\out_camera_data.xml">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\out_camera_data.yml">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\out_camera_data_usb.xml">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\Prism.xml">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\rects.xml">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\secFb_outfile.txt">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\stage2.png">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\stage3.png">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\stage4.png">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\stage5.png">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\T_Nano-C2050_Default_Default1.ccf">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\Backend\MlcCamera\Trackbars.xml">
+      <Filter>Required Files</Filter>
+    </CopyFileToFolders>
+  </ItemGroup>
+</Project>

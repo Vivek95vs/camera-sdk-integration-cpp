@@ -1,0 +1,27 @@
+﻿Build started 23-08-2022 14:30:49.
+     1>Project "D:\visualStudio15\GiGE_c++ - Phoenix cam\ip_cam\ip_cam.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (ip_cam.vcxproj, PH_grabber.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt" /I"C:\Program Files\Lucid Vision Labs\Arena SDK\include" /I"C:\Program Files\Lucid Vision Labs\Arena SDK\GenICam\library\CPP\include" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D NDEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Release\\" /Fd"x64\Release\vc140.pdb" /Gd /TP /errorReport:prompt grabber_g.cpp mlc.cpp Source.cpp
+         grabber_g.cpp
+         mlc.cpp
+     1>mlc.cpp(50): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+     1>mlc.cpp(76): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'std::string'
+     1>mlc.cpp(85): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 2 has type 'std::string'
+         Source.cpp
+     1>Source.cpp(18): warning C4101: 'end': unreferenced local variable
+     1>Source.cpp(18): warning C4101: 'start': unreferenced local variable
+     1>Source.cpp(19): warning C4101: 'cpu_time': unreferenced local variable
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:".\x64\Release\ip_cam_sapera.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.10150.0\ucrt\x64" /LIBPATH:"C:\Program Files\Lucid Vision Labs\Arena SDK\lib64\ArenaC" /LIBPATH:"C:\Program Files\Lucid Vision Labs\Arena SDK\lib64\Arena" /LIBPATH:"C:\Program Files\Lucid Vision Labs\Arena SDK\GenICam\library\CPP\lib\Win64_x64" GCBase_MD_VC140_v3_3_LUCID.lib GCBase_MDd_VC140_v3_3_LUCID.lib GenApi_MD_VC140_v3_3_LUCID.lib GenApi_MDd_VC140_v3_3_LUCID.lib Log_MD_VC140_v3_3_LUCID.lib Log_MDd_VC140_v3_3_LUCID.lib MathParser_MD_VC140_v3_3_LUCID.lib MathParser_MDd_VC140_v3_3_LUCID.lib NodeMapData_MD_VC140_v3_3_LUCID.lib NodeMapData_MDd_VC140_v3_3_LUCID.lib ResUsageStat_MD_VC140_v3_3_LUCID.lib ResUsageStat_MDd_VC140_v3_3_LUCID.lib XmlParser_MD_VC140_v3_3_LUCID.lib XmlParser_MDd_VC140_v3_3_LUCID.lib Arena_v140.lib Arenad_v140.lib ArenaUI_v140.lib ArenaUId_v140.lib GenTL_LUCID_v140.lib GenTL_LUCIDd_v140.lib lucidlog_v140.lib lucidlogd_v140.lib Save_v140.lib Saved_v140.lib ArenaC_v140.lib ArenaCd_v140.lib SaveC_v140.lib SaveCd_v140.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:".\x64\Release\ip_cam_sapera.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\x64\Release\ip_cam_sapera.lib" /MACHINE:X64 x64\Release\grabber_g.obj
+         x64\Release\mlc.obj
+         x64\Release\Source.obj
+         Generating code
+         All 242 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+         Finished generating code
+         ip_cam.vcxproj -> D:\visualStudio15\GiGE_c++ - Phoenix cam\ip_cam\.\x64\Release\ip_cam_sapera.exe
+     1>Done Building Project "D:\visualStudio15\GiGE_c++ - Phoenix cam\ip_cam\ip_cam.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.46
