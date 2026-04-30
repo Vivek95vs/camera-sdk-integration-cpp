@@ -23,6 +23,7 @@
 #define TAB2 "    "
 #define TAB3 "      "
 
+int counter=0;
 // Trigger: Introduction
 //    This example introduces basic trigger configuration and use. In order to
 //    configure trigger, enable trigger mode and set the source and selector. The
@@ -70,6 +71,7 @@ void ConfigureTriggerAndAcquireImage(Arena::IDevice* pDevice)
 	GenICam::gcstring triggerModeInitial = Arena::GetNodeValue<GenICam::gcstring>(pDevice->GetNodeMap(), "TriggerMode");
 	GenICam::gcstring triggerSourceInitial = Arena::GetNodeValue<GenICam::gcstring>(pDevice->GetNodeMap(), "TriggerSource");
 	GenICam::gcstring triggeractivationInitial = Arena::GetNodeValue<GenICam::gcstring>(pDevice->GetNodeMap(), "TriggerActivation");
+	double triggerdelayInitial = Arena::GetNodeValue<double>(pDevice->GetNodeMap(), "TriggerDelay");
 
 	// Set trigger selector
 	//    Set the trigger selector to FrameStart. When triggered, the device will
@@ -77,60 +79,40 @@ void ConfigureTriggerAndAcquireImage(Arena::IDevice* pDevice)
 	//    AcquisitionStart or FrameBurstStart.
 	std::cout << TAB1 << "Set trigger selector to FrameStart\n";
 
-	Arena::SetNodeValue<GenICam::gcstring>(
-		pDevice->GetNodeMap(),
-		"LineSelector",
-		"Line0");
+	Arena::SetNodeValue<GenICam::gcstring>(pDevice->GetNodeMap(),"LineSelector","Line0");
 
-	Arena::SetNodeValue<GenICam::gcstring>(
-		pDevice->GetNodeMap(),
-		"LineMode",
-		"Input");
+	Arena::SetNodeValue<GenICam::gcstring>(pDevice->GetNodeMap(),"LineMode","Input");
 
-	Arena::SetNodeValue<GenICam::gcstring>(
-		pDevice->GetNodeMap(),
-		"TriggerSelector",
-		"FrameStart");
+	Arena::SetNodeValue<GenICam::gcstring>(pDevice->GetNodeMap(),"TriggerSelector","FrameStart");
 
 	std::cout << TAB1 << "Enable trigger mode\n";
 
-	Arena::SetNodeValue<GenICam::gcstring>(
+	Arena::SetNodeValue<GenICam::gcstring>(pDevice->GetNodeMap(),"TriggerMode","On");
+
+
+	//std::cout << TAB1 << "Set trigger source to Software\n";
+
+	Arena::SetNodeValue<GenICam::gcstring>(pDevice->GetNodeMap(),"TriggerSource","Line0");
+
+	Arena::SetNodeValue<GenICam::gcstring>(pDevice->GetNodeMap(),"TriggerActivation","RisingEdge");
+
+	Arena::SetNodeValue<double>(pDevice->GetNodeMap(), "TriggerDelay", 200000);
+	//Arena::SetNodeValue<GenICam::gcstring>(pDevice->GetNodeMap(),"AcquisitionMode","Continuous");
+
+	Arena::SetNodeValue<int64_t>(
 		pDevice->GetNodeMap(),
-		"TriggerMode",
-		"On");
+		"GevSCPSPacketSize",
+		9000);
 
 
-	std::cout << TAB1 << "Set trigger source to Software\n";
+	//// enable stream auto negotiate packet size
+	Arena::SetNodeValue<bool>(pDevice->GetTLStreamNodeMap(),"StreamAutoNegotiatePacketSize",true);
 
-	Arena::SetNodeValue<GenICam::gcstring>(
-		pDevice->GetNodeMap(),
-		"TriggerSource",
-		"Line0");
-
-	Arena::SetNodeValue<GenICam::gcstring>(
-		pDevice->GetNodeMap(),
-		"TriggerActivation",
-		"FallingEdge");
-
-	Arena::SetNodeValue<GenICam::gcstring>(
-		pDevice->GetNodeMap(),
-		"AcquisitionMode",
-		"Continuous");
-
-	// enable stream auto negotiate packet size
-	Arena::SetNodeValue<bool>(
-		pDevice->GetTLStreamNodeMap(),
-		"StreamAutoNegotiatePacketSize",
-		true);
-
-	// enable stream packet resend
-	Arena::SetNodeValue<bool>(
-		pDevice->GetTLStreamNodeMap(),
-		"StreamPacketResendEnable",
-		true);
+	//// enable stream packet resend
+	Arena::SetNodeValue<bool>(pDevice->GetTLStreamNodeMap(),"StreamPacketResendEnable",true);
 
 	std::cout << TAB1 << "Start stream\n";
-
+	int64_t packet = Arena::GetNodeValue<int64_t>(pDevice->GetNodeMap(), "GevSCPSPacketSize");
 	GenICam::gcstring LineSelector1 = Arena::GetNodeValue<GenICam::gcstring>(pDevice->GetNodeMap(), "LineSelector");
 	GenICam::gcstring LineMode1 = Arena::GetNodeValue<GenICam::gcstring>(pDevice->GetNodeMap(), "LineMode");
 	GenICam::gcstring TriggerSelector1 = Arena::GetNodeValue<GenICam::gcstring>(pDevice->GetNodeMap(), "TriggerSelector");
@@ -138,6 +120,7 @@ void ConfigureTriggerAndAcquireImage(Arena::IDevice* pDevice)
 	GenICam::gcstring TriggerSource1 = Arena::GetNodeValue<GenICam::gcstring>(pDevice->GetNodeMap(), "TriggerSource");
 	GenICam::gcstring TriggerActivation1 = Arena::GetNodeValue<GenICam::gcstring>(pDevice->GetNodeMap(), "TriggerActivation");
 	GenICam::gcstring AcquisitionMode1 = Arena::GetNodeValue<GenICam::gcstring>(pDevice->GetNodeMap(), "AcquisitionMode");
+	std::cout << "Packet size" << packet << std::endl;
 
 	std::cout << "LineSelector1" << " " << LineSelector1 << std::endl;
 	std::cout << "LineMode1" << " " << LineMode1 << std::endl;
@@ -147,28 +130,28 @@ void ConfigureTriggerAndAcquireImage(Arena::IDevice* pDevice)
 	std::cout << "TriggerActivation1" << " " << TriggerActivation1 << std::endl;
 	std::cout << "AcquisitionMode1" << " " << AcquisitionMode1 << std::endl;
 
-	std::cout << TAB2 << "Wait until trigger is armed\n";
-	bool triggerArmed = false;
+	//std::cout << TAB2 << "Wait until trigger is armed\n";
 
-	do
-	{
-		triggerArmed = Arena::GetNodeValue<bool>(pDevice->GetNodeMap(), "TriggerArmed");
-		std::cout << "triggerarmed" << " " << triggerArmed << std::endl;
-	} while (triggerArmed == false);
+	
 
-	//bool triggerArmed = false;
-
-	//do
-	//{
-	//	triggerArmed = Arena::GetNodeValue<bool>(pDevice->GetNodeMap(), "TriggerArmed");
-	//	std::cout << "triggerarmed" << " " << triggerArmed << std::endl;
-	//} while (triggerArmed == false);
-
+	//Arena::ExecuteNode(
+	//	pDevice->GetNodeMap(),
+	//	"TriggerSoftware");
+	
 	pDevice->StartStream();
 
-
-	for (uint32_t i = 1; i <= NUM_IMAGES; i++)
+	for (int j = 0;j <= 10;j++)
 	{
+		bool triggerArmed = false;
+		do
+		{
+			triggerArmed = Arena::GetNodeValue<bool>(pDevice->GetNodeMap(), "LineStatus");
+			std::cout << "triggerarmed" << " " << triggerArmed << std::endl;
+		} while (triggerArmed == false);
+		
+
+		/*for (uint32_t i = 1; i <= NUM_IMAGES; i++)
+		{*/
 		// Trigger Armed
 		//    Continually check until trigger is armed. Once the trigger is
 		//    armed, it is ready to be executed.
@@ -180,32 +163,57 @@ void ConfigureTriggerAndAcquireImage(Arena::IDevice* pDevice)
 		//	triggerArmed = Arena::GetNodeValue<bool>(pDevice->GetNodeMap(), "TriggerArmed");
 		//	std::cout << "triggerarmed" << " " << triggerArmed << std::endl;
 		//} while (triggerArmed == false);
-
 		std::cout << TAB2 << "Get image";
 
 		Arena::IImage* pImage = pDevice->GetImage(TIMEOUT);
 
 		std::cout << " (" << pImage->GetWidth() << "x" << pImage->GetHeight() << ")\n";
 
-		// requeue buffer
+		Arena::IImage* pConvert = Arena::ImageFactory::Convert(pImage, PIXEL_FORMAT);
+		//// parameters required to save the image
+		Save::ImageParams params(
+			pConvert->GetWidth(),
+			pConvert->GetHeight(),
+			pConvert->GetBitsPerPixel());
+
+		////std::cout << std::endl << " " << "Prepare image writer for image " << endl;
+
+		//// naming each image in the order it were clicked
+		std::string str = FILE_NAME + std::to_string(j) + FILE_TYPE;
+
+		//// prepare image writer
+		Save::ImageWriter writer(params, str.c_str());
+
+		////// saves image
+		writer << pConvert->GetData();
+
+		//counter++;
+
+
+		//std::cout << std::endl << " " << "Saved image " << endl;
+
+
+		//Mat img = cv::Mat((int)pConvert->GetHeight(), (int)pConvert->GetWidth(), CV_8UC3, (void *)pConvert->GetData());
+
 		std::cout << TAB2 << "Requeue buffer\n";
 
 		pDevice->RequeueBuffer(pImage);
-
-		// Stop the stream
-		std::cout << TAB1 << "Stop stream\n";
 	}
 
+		
+		// Stop the stream
+		std::cout << TAB1 << "Stop stream\n";
+	//}
 
-	pDevice->StopStream();
+	//pDevice->StopStream();
 
 	// return nodes to their initial values
-	Arena::SetNodeValue<GenICam::gcstring>(pDevice->GetNodeMap(), "LineSelector", triggerLineSelectorInitial);
-	Arena::SetNodeValue<GenICam::gcstring>(pDevice->GetNodeMap(), "LineMode", triggerLineModeInitial);
-	Arena::SetNodeValue<GenICam::gcstring>(pDevice->GetNodeMap(), "TriggerSource", triggerSourceInitial);
-	Arena::SetNodeValue<GenICam::gcstring>(pDevice->GetNodeMap(), "TriggerMode", triggerModeInitial);
-	Arena::SetNodeValue<GenICam::gcstring>(pDevice->GetNodeMap(), "TriggerSelector", triggerSelectorInitial);
-	Arena::SetNodeValue<GenICam::gcstring>(pDevice->GetNodeMap(), "TriggerActivation", triggeractivationInitial);
+	//Arena::SetNodeValue<GenICam::gcstring>(pDevice->GetNodeMap(), "LineSelector", triggerLineSelectorInitial);
+	//Arena::SetNodeValue<GenICam::gcstring>(pDevice->GetNodeMap(), "LineMode", triggerLineModeInitial);
+	//Arena::SetNodeValue<GenICam::gcstring>(pDevice->GetNodeMap(), "TriggerSource", triggerSourceInitial);
+	//Arena::SetNodeValue<GenICam::gcstring>(pDevice->GetNodeMap(), "TriggerMode", triggerModeInitial);
+	//Arena::SetNodeValue<GenICam::gcstring>(pDevice->GetNodeMap(), "TriggerSelector", triggerSelectorInitial);
+	//Arena::SetNodeValue<GenICam::gcstring>(pDevice->GetNodeMap(), "TriggerActivation", triggeractivationInitial);
 }
 
 // =-=-=-=-=-=-=-=-=-
@@ -233,15 +241,23 @@ int main()
 			return 0;
 		}
 		Arena::IDevice* pDevice = pSystem->CreateDevice(deviceInfos[0]);
+		GenICam::gcstring devicename = deviceInfos[0].ModelName();
+
+		std::cout << "Camera Name" << " " << devicename << std::endl;
 
 		// run example
 		std::cout << "Commence example\n\n";
-		ConfigureTriggerAndAcquireImage(pDevice);
-		std::cout << "\nExample complete\n";
+		for (int i = 0;i < 10;i++)
+		{
+			ConfigureTriggerAndAcquireImage(pDevice);
+		}
+		
+		//pDevice->StopStream();
+		//std::cout << "\nExample complete\n";
 
-		// clean up example
-		pSystem->DestroyDevice(pDevice);
-		Arena::CloseSystem(pSystem);
+		//// clean up example
+		//pSystem->DestroyDevice(pDevice);
+		//Arena::CloseSystem(pSystem);
 	}
 	catch (GenICam::GenericException& ge)
 	{
